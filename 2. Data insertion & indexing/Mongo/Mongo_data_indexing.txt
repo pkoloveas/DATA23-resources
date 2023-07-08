@@ -1,0 +1,29 @@
+
+/* Data indexing for Mongo database.
+Each example is referred to each dataset for the batch of 500k records*/
+
+-------------------------------------------------------------------------
+
+/* Yelp_review dataset (medium) */
+
+
+-- create collections and indexes
+use yelp_review
+
+db.createCollection(yelp_review500)
+
+db.yelp_review500.createIndex(review_id:”text”, review:”text”)
+
+--------------------------------------------------------------------------
+
+/* Crossref_total dataset (large) */
+
+
+-- create collections and indexes
+use crossref_total
+
+db.createCollection(crossref_total500)
+
+db.crossref_total500.createIndex(title:”text”, abstract:”text”)
+
+--------------------------------------------------------------------------

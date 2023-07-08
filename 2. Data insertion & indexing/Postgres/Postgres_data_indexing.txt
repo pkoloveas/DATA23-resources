@@ -1,0 +1,57 @@
+
+/* Data indexing for Postgres database.
+Each example is referred to each dataset for the batch of 500k records*/
+
+--------------------------------------------------------------------------
+
+/* Yelp_review dataset (medium) */
+
+
+-- create database
+CREATE DATABASE yelp_review
+    WITH
+    OWNER = postgres 
+
+-- create tables
+CREATE TABLE yelp_review500 (
+	review_id TEXT,
+        review TEXT 
+);
+
+
+-- create a new column, for each table, named ’document’ of data type 'tsvector'
+alter table yelp_review500
+add column document tsvector;
+
+update yelp_review500
+set document = to_tsvector(review_id, review);
+
+-- create the GIN indexes for the yelp_review database
+CREATE INDEX document_idx ON yelp_review500 USING GIN (document)
+
+--------------------------------------------------------------------------
+
+/* Crossref_total dataset (large) */
+
+-- create database
+CREATE DATABASE crossref_total
+    WITH
+    OWNER = postgres
+
+-- create tables
+CREATE TABLE crossref_total500 (
+	title TEXT,
+	abstract TEXT
+);
+
+
+-- create a new column, for each table, named ’document_total’ of data type 'tsvector'
+alter table crossref_total500
+add column document_total tsvector;
+
+update crossref_total500
+set document_total = to_tsvector(title, abstract);
+
+-- create the GIN indexes for the crossref_total database
+CREATE INDEX document_idx ON crossref_total500 USING GIN (document_total)
+--------------------------------------------------------------------------

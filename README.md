@@ -6,4 +6,4 @@
 
 ## Repository structure:
 - Each numbered folder correlates to each section mentioned in the paper (Data processing, Data insertion & indexing, Extact phrase matching, Wildcard search, and Boolean search)
-- The data folder is where the user should add the dataset files in their respective folders.
+- The Data folder is where the user should add the dataset files in their respective folders.

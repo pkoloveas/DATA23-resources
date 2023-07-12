@@ -9,14 +9,17 @@
 - The Data folder is where the user should add the dataset files in their respective folders.
 
 
-If you utilize the processes and scripts in this repository, please cite us in the following way
+If you utilize the processes and scripts in this repository, please cite us in the following way:
 ```bibtex
 @INPROCEEDINGS{data23-FKRT,
-  AUTHOR	=	{George Fotopoulos and Paris Koloveas and Paraskevi Raftopoulou and Christos Tryfonopoulos},
-  TITLE		=	"{Comparing Data Store Performance for Full-Text Search: to SQL or to NoSQL?}",
-  BOOKTITLE	=	"{Proceedings of the 12th International Conference on Data Science, Technology and Applications (DATA)}",
-  YEAR 		=	{2023},
-  ADDRESS 	=	"{Rome, Italy}",
-  MONTH 	=	{July}
+  AUTHOR	  = {George Fotopoulos and
+               Paris Koloveas and
+               Paraskevi Raftopoulou and
+               Christos Tryfonopoulos},
+  TITLE		  = {Comparing Data Store Performance for Full-Text Search: to SQL or to NoSQL?},
+  BOOKTITLE	= {Proceedings of the 12th International Conference on Data Science, Technology and Applications (DATA)},
+  YEAR 		  = {2023},
+  ADDRESS 	= {Rome, Italy},
+  MONTH 	  = {July}
 }
 ```

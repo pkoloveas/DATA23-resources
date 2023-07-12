@@ -1,4 +1,4 @@
-# DATA23-resources
+# Resources for the paper "Comparing Data Store Performance for Full-Text Search: to SQL or to NoSQL?" published in DATA 2023
 
 ## Datasets:
 1. [Yelp Reviews](https://www.kaggle.com/datasets/luisfredgs/yelp-reviews-csv)

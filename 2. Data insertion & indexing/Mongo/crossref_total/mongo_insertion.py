@@ -12,7 +12,7 @@ start_time = time.time()
 
 # program body starts
 # CSV to JSON Conversion
-csvfile = open('/Users/GeoFot/data/Datasets/crossref_total/crossref_total500.csv', 'r', encoding='utf8')
+csvfile = open('../../data/crossref_total/crossref_total500.csv', 'r', encoding='utf8')
 reader = csv.DictReader(csvfile, delimiter=',')
 mongo_client=MongoClient() 
 db=mongo_client.crossref_total

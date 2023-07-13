@@ -7,7 +7,7 @@ nltk.download('stopwords')
 
 top_N = 1000
 
-df = pd.read_csv(r'/Users/GeoFot/data/yelp_review/yelp_review500.csv',      
+df = pd.read_csv(r'../../data/yelp_review/yelp_review500.csv',      
                  usecols=['review'])                              
 
 stopwords = nltk.corpus.stopwords.words('english')
@@ -25,4 +25,4 @@ rslt = pd.DataFrame(Counter(words).most_common(top_N),
                     columns=['Word', 'Frequency']).set_index('Word')
 print(rslt)
 
-rslt.to_excel (r'C:\Users\GeoFot\data\yelp_review\yelp_review_top500.xlsx', index = True, header=True)
+rslt.to_excel (r'../data/yelp_review/yelp_review_top500.xlsx', index = True, header=True)

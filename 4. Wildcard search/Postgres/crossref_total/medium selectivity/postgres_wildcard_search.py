@@ -3,7 +3,7 @@ import psycopg2
 import time
 
 # connect to postgres db
-conn = psycopg2.connect(user="postgres", password="ds123", dbname="crossref_total", host="localhost", port="5432")
+conn = psycopg2.connect(user="postgres", password="", dbname="crossref_total", host="localhost", port="5432")
 
 # open a cursor to perform database operations
 cur = conn.cursor()

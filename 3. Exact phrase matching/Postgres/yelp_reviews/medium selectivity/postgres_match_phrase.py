@@ -3,7 +3,7 @@ import psycopg2
 import time
 
 # connect to postgres db
-conn = psycopg2.connect(user="postgres", password="ds123", dbname="yelp_review", host="localhost", port="5432")
+conn = psycopg2.connect(user="postgres", password="", dbname="yelp_review", host="localhost", port="5432")
 
 # open a cursor to perform database operations
 cur = conn.cursor()

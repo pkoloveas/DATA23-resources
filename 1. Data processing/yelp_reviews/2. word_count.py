@@ -2,7 +2,7 @@
 import pandas
 
 # load the dataset
-dataset = pandas.read_csv('/Users/GeoFot/data/yelp_review/yelp_review500.csv', delimiter = ',')
+dataset = pandas.read_csv('../../data/yelp_review/yelp_review500.csv', delimiter = ',')
 dataset.head()
 
 # fetch wordcount

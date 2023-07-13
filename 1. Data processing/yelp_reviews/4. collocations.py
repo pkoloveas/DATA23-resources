@@ -11,7 +11,7 @@ from nltk.metrics import BigramAssocMeasures
 stopset = set(stopwords.words('english'))
 filter_stops = lambda w: len(w) < 3 or w in stopset
 
-words = [w.lower() for w in webtext.words(r'/Users/GeoFot/data/yelp_review/yelp_review500.csv')]
+words = [w.lower() for w in webtext.words(r'../../data/yelp_review/yelp_review500.csv')]
   
 biagram_collocation = BigramCollocationFinder.from_words(words)
 

@@ -1,6 +1,6 @@
 
 /* Data indexing for Postgres database.
-Each example is referred to each dataset for the batch of 500k records*/
+Each example is referring to each dataset for the batch of 500k records*/
 
 --------------------------------------------------------------------------
 

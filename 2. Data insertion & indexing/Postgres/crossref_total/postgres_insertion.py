@@ -17,7 +17,7 @@ copy_sql = """
 start_time = time.time()
 
 # program body starts
-with open('/Users/GeoFot/data/Datasets/crossref_total/crossref_total500.csv', 'r', encoding = 'utf-8') as f:
+with open('../../data/crossref_total/crossref_total500.csv', 'r', encoding = 'utf-8') as f:
     #next(f) # skip the header row.
     cur.copy_expert(sql=copy_sql, file=f)
 # program body ends

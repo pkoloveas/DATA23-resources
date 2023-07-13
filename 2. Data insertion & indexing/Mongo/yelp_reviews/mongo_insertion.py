@@ -12,7 +12,7 @@ start_time = time.time()
 
 # program body starts
 # CSV to JSON Conversion
-csvfile = open('/Users/GeoFot/data/Datasets/yelp_review/yelp_review500.csv', 'r', encoding='utf8')
+csvfile = open('../../data/yelp_review/yelp_review500.csv', 'r', encoding='utf8')
 reader = csv.DictReader(csvfile, delimiter=',')
 mongo_client=MongoClient() 
 db=mongo_client.yelp_review

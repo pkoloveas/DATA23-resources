@@ -9,7 +9,7 @@ es = Elasticsearch([{'host': 'localhost', 'port': 9200}])
 # starting time
 start_time = time.time()
 
-with open('/Users/GeoFot/data/Datasets/yelp_review/yelp_review500.csv', 'r', encoding='iso-8859-1') as outfile:
+with open('../../data/yelp_review/yelp_review500.csv', 'r', encoding='iso-8859-1') as outfile:
     reader = csv.DictReader(outfile, delimiter=',')
     helpers.bulk(es, reader, index='yelp500', doc_type='doc', request_timeout=2000)
 # program body ends

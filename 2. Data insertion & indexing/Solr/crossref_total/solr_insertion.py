@@ -7,7 +7,7 @@ import time
 start_time = time.time()
 
 # program body starts
-data = open('/Users/GeoFot/data/Datasets/crossref_total/crossref_total500.csv', 'r', encoding='iso-8859-1')
+data = open('../../data/crossref_total/crossref_total500.csv', 'r', encoding='iso-8859-1')
 url = 'http://localhost:8983/solr/crossref_total500/update/csv?commit=true&separator=%2C'
 req = urllib.request.Request(url, data, {'Content-Type': 'text/plain'})
 f = urllib.request.urlopen(req)

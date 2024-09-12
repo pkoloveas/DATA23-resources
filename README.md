@@ -11,7 +11,7 @@ DOI: [10.5220/0012089200003541](https://doi.org/10.5220/0012089200003541)
 - The Data folder is where the user should add the dataset files in their respective folders.
 
 ## Citing this work
-If you utilize the processes and scripts in this repository, please cite us in the following way:
+If you utilize any of the processes and scripts in this repository, please cite us in the following way:
 ```bibtex
 @INPROCEEDINGS{data23-FKRT,
   AUTHOR       = {George Fotopoulos and

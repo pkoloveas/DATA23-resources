@@ -10,7 +10,7 @@ DOI: [10.5220/0012089200003541](https://doi.org/10.5220/0012089200003541)
 - Each numbered folder correlates to each section mentioned in the paper (Data processing, Data insertion & indexing, Exact phrase matching, Wildcard search, and Boolean search)
 - The Data folder is where the user should add the dataset files in their respective folders.
 
-
+## Citing this work
 If you utilize the processes and scripts in this repository, please cite us in the following way:
 ```bibtex
 @INPROCEEDINGS{data23-FKRT,

@@ -2,11 +2,11 @@
 
 DOI: [10.5220/0012089200003541](https://doi.org/10.5220/0012089200003541)
 
-## Datasets:
+## Datasets
 1. [Yelp Reviews](https://www.kaggle.com/datasets/luisfredgs/yelp-reviews-csv)
 2. [Crossref (raw source)](https://academictorrents.com/details/e4287cb7619999709f6e9db5c359dda17e93d515)
 
-## Repository structure:
+## Repository structure
 - Each numbered folder correlates to each section mentioned in the paper (Data processing, Data insertion & indexing, Exact phrase matching, Wildcard search, and Boolean search)
 - The Data folder is where the user should add the dataset files in their respective folders.
 
